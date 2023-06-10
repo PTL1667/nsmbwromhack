@@ -1,0 +1,18 @@
+<wiidisc version="1" shiftfiles="true">
+    <id game="SMN" />
+    <options>
+        <section name="Testing">
+            <option name="File Replacement">
+                <choice name="Enabled">
+                    <patch id="nsmbfolder" />
+                </choice>
+            </option>
+        </section>
+    </options>
+    <patch id="nsmbfolder">
+        <folder external="/nsmb" recursive="false" />
+        <folder external="/nsmb" disc="/" />
+        <folder external="/nsmb/Stage/" disc="/Stage/" create="true" />
+        <folder external="/nsmb/Stage/Texture/" disc="/Stage/Texture/" create="true" />
+    </patch>
+</wiidisc>
